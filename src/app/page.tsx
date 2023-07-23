@@ -1,11 +1,13 @@
-import Image from "next/image";
+import PersonalInfo from "@/components/PersonalInfo";
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between">
       <section id="hero-section">Hero</section>
-      <section id="personal-section">Personal Information</section>
+      <PersonalInfo />
       <section id="twitch-section">Twitch</section>
     </main>
   );
-}
+};
+
+export default Home;
